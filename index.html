@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="all" style="transition: 2.5s">
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+
+<div class='next_btn'></div>
+
+
+
+
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+  <script src="js/index.js"></script>
+
+  <audio preload="auto|metadata|none"></audio>
+
+  <title>소리의 동선</title>
+</head>
+
+<body>
+
+  <p1
+    style="position: relative; left: 40%; top: 460px; font-family: 'Noto Sans KR', sans-serif; font-size: 2.5em; color: white;">
+    이어폰을
+    착용해주세요.</p1>
+
+  <h1 style="position: relative; left: 29%; top: 25px; font-family: 'Noto Sans KR', sans-serif; font-size: 10em;">소리의 동선
+  </h1>
+
+  <h1 style="position: relative; left: 37%; top: 390px; font-family: 'Noto Sans KR', sans-serif; font-size: 2.5em;">
+    2021.12.21. - 2022.02.22
+  </h1>
+
+  <h1 style="position: relative; left: 41.5%; top: 454px; font-family: 'Noto Sans KR', sans-serif; font-size: 2em;">
+    한경대학교 디자인학과
+  </h1>
+
+
+  <div class="line" id="line" style="position: fixed; top: 30px; right: 0px;
+    "></div>
+
+  <div class="line2" id="line2" style="position: fixed; top: 150px; right:;
+    "></div>
+
+  <div class="line3" id="line3" style="position: fixed; top: 250px; right:;
+    "></div>
+
+  <div class="line4" id="line4" style="position: fixed; top: 370px; right: 0px;
+    "></div>
+
+  <div class="line5" id="line5" style="position: fixed; top: 490px; right:;
+    "></div>
+
+  <div class="line6" id="line6" style="position: fixed; top: 600px; right: 3px;
+    "></div>
+
+  <div class="line7" id="line7" style="position: fixed; top: 720px; right: ;
+    "></div>
+
+  <div class="line8" id="line8" style="position: fixed; top: 840px; right: 0px;
+    "></div>
+
+
+
+
+  <div class="demo" id="demo" style="position: fixed; top: 30px; right: 0px;
+  transition: width 6s linear;"></div>
+
+  <div class="demo2" id="demo2" style="position: fixed; top: 150px; right:;
+transition: width 6s linear;"></div>
+
+  <div class="demo3" id="demo3" style="position: fixed; top: 250px; right:;
+transition: width 6s linear;"></div>
+
+  <div class="demo4" id="demo4" style="position: fixed; top: 370px; right: 0px;
+transition: width 6s linear;"></div>
+
+  <div class="demo5" id="demo5" style="position: fixed; top: 490px; right:;
+transition: width 6s linear;"></div>
+
+  <div class="demo6" id="demo6" style="position: fixed; top: 600px; right: 0px;
+transition: width 6s linear;"></div>
+
+  <div class="demo7" id="demo7" style="position: fixed; top: 720px; right: ;
+transition: width 6s linear;"></div>
+
+  <div class="demo8" id="demo8" style="position: fixed; top: 840px; right: 0px;
+transition: width 6s linear;"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <!-- <div style="margin-top: 60px;">
+    <div class="demo" id="demo" style="
+      width: 100%;
+      height: 120px;
+      background-image: url(img/1.png);
+      background-size: calc(100vw);
+      background-position: right top;
+      
+      "></div> -->
+
+  <style type="text/css">
+    .demo {
+      width: 5.4%;
+      height: 120px;
+      background-image: url(img/1.png);
+      background-size: 1920px;
+      background-position: right top;
+
+    }
+
+    .demo2 {
+      width: 5%;
+      height: 120px;
+      background-image: url(img/2.png);
+      background-size: 1920px;
+      background-position: left top;
+
+    }
+
+    .demo3 {
+      width: 5%;
+      height: 120px;
+      background-image: url(img/3.png);
+      background-size: 1920px;
+      background-position: left top;
+
+    }
+
+    .demo4 {
+      width: 5.4%;
+      height: 100px;
+      background-image: url(img/4.png);
+      background-size: 1920px;
+      background-position: right top;
+
+    }
+
+    .demo5 {
+      width: 5%;
+      height: 120px;
+      background-image: url(img/5.png);
+      background-size: 1920px;
+      background-position: left top;
+
+    }
+
+    .demo6 {
+      width: 5.4%;
+      height: 120px;
+      background-image: url(img/6.png);
+      background-size: 1920px;
+      background-position: right top;
+
+    }
+
+    .demo7 {
+      width: 5%;
+      height: 120px;
+      background-image: url(img/7.png);
+      background-size: 1920px;
+      background-position: left top;
+
+    }
+
+    .demo8 {
+      width: 5.4%;
+      height: 100px;
+      background-image: url(img/8.png);
+      background-size: 1920px;
+      background-position: right top;
+    }
+
+
+
+
+
+
+
+    .line {
+      width: 1900px;
+      height: 120px;
+      background-image: url(img/1-1.png);
+      background-size: 1920px;
+      background-position: right top;
+
+    }
+
+    .line2 {
+      width: 1900px;
+      height: 120px;
+      background-image: url(img/2-1.png);
+      background-size: 1920px;
+      background-position: left top;
+
+    }
+
+    .line3 {
+      width: 1900px;
+      height: 120px;
+      background-image: url(img/3-1.png);
+      background-size: 1920px;
+      background-position: left top;
+
+    }
+
+    .line4 {
+      width: 1900px;
+      height: 100px;
+      background-image: url(img/4-1.png);
+      background-size: 1920px;
+      background-position: right top;
+
+    }
+
+    .line5 {
+      width: 1900px;
+      height: 120px;
+      background-image: url(img/5-1.png);
+      background-size: 1920px;
+      background-position: left top;
+
+    }
+
+    .line6 {
+      width: 1900px;
+      height: 120px;
+      background-image: url(img/6-1.png);
+      background-size: 1920px;
+      background-position: right top;
+
+    }
+
+    .line7 {
+      width: 1900px;
+      height: 120px;
+      background-image: url(img/7-1.png);
+      background-size: 1920px;
+      background-position: left top;
+
+    }
+
+    .line8 {
+      width: 1900px;
+      height: 100px;
+      background-image: url(img/8-1.png);
+      background-size: 1920px;
+      background-position: right top;
+    }
+  </style>
+
+</body>
+
+</html>
